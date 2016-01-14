@@ -1,0 +1,18 @@
+System Design Process
+
+Step 1: what's the constraints and use cases?
+
+Example: Design a URL shorten services
+1. What's the use cases?
+	*Shortening: take an URL => return a much shorter URL
+	*Redirection: take a short URL => redirect to original URL
+	*Custom URL: allow user to pick their URL if it is not taken yet
+	*High availability of the system
+	
+	There can be more use cases, which we should think of and verify with the interviewer
+	*Analytics: allow user to look at the usage of URL
+	*Automatic link expiration
+	*Manual link removal
+	*UI vs API: should we have a web site for that or just provide API for that
+	
+	
