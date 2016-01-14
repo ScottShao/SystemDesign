@@ -34,4 +34,6 @@ Example: Design a URL shorten services
 	*New data written per second: 40*(500+6) = 20K
 	*Data read per second : 360 * 506 = 180K
 	
+3. Abstract design
+	
 	
