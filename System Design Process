@@ -15,4 +15,23 @@ Example: Design a URL shorten services
 	*Manual link removal
 	*UI vs API: should we have a web site for that or just provide API for that
 	
+2. What's the constraints?
+	-How much traffic we have to deal with?
+	-How much data we have to deal with?
+	
+	*Assume we are the top 10 shorten URL services provider
+	*Assume large percent of shorten URL services are used by Twitter
+	*Twitter has 600M users, 30 tweets for each user every month, 1.8B shorten URLs are needed here
+	*top 3 takes 80%, and we will shorten 100M URLs per month
+	*Assume URL's life cycle is two weeks
+	*Traffic will be roughly 1B per month
+	*10% from shortening, 90% from redirection
+	*Requests per second: 400+ per second (40 shortening, 360 redirecting)
+	*Total URLs: 6B in 5 years
+	*500 bytes per URL
+	*6 bytes per hash
+	*3TB for URLs, 36GB for hashes
+	*New data written per second: 40*(500+6) = 20K
+	*Data read per second : 360 * 506 = 180K
+	
 	
